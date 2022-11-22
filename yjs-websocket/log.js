@@ -11,7 +11,9 @@ wsProvider.on('status', event => {
 
 wsProvider.on("sync", _ => {
     cells = doc.getArray("cells")
-    console.log(cells.toJSON())
+    setTimeout(()=>{
+        console.log(cells.toJSON())
+    }, 100)
 })
 
 

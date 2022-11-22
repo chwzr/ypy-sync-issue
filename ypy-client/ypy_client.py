@@ -6,9 +6,9 @@ from ypy_websocket import WebsocketProvider
 
 async def client():
     ydoc = Y.YDoc()
-    async with connect("ws://localhost:1234/card_cd846c85-057d-413b-989a-1085d54c37f2.ipynb") as websocket:  # type: ignore
+    async with connect("ws://localhost:1234/card_cd846c85-057d-413b-989a-1085d54c37f2.ipynb") as websocket:
         WebsocketProvider(ydoc, websocket)
-        await asyncio.sleep(1)
+        await asyncio.sleep(2)
         cells = ydoc.get_array("cells")
         print(f"{cells = }")
 
