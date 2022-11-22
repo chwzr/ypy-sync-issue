@@ -1,0 +1,18 @@
+{
+  "name": "yjs-websocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "init.js",
+  "scripts": {
+    "log": "node log.js",
+    "server": "HOST=localhost PORT=1234 YPERSISTENCE=./db npx y-websocket",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.11.0",
+    "y-websocket": "^1.4.5",
+    "yjs": "^13.5.42"
+  }
+}
